@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class JWTUtil {
 
-    private static final String KEY = "NJHR";
+    private static final String KEY = "your_key";
     public static String genToken(Map<String,Object> claims) {
         return JWT.create()
                 .withClaim("claims",claims)
